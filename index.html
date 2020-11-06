@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Untitled Document</title>
+    <style>
+    
+	@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+	
+	h3 {
+		font-style: italic;
+		margin-top: -5px;
+	}
+	
+	body {
+		background-color: black;
+		color: white;
+		font-family: "Press Start 2P";
+		padding: 20px;
+	}
+	
+	a {
+		color: #3F6;	
+	}
+	
+	a:hover {
+		color: #3C3;	
+	}
+	
+	button {
+		border-width: 2px;
+		border-color: white;
+		border-style: solid;
+		font-family: "Press Start 2P";	
+		color: white;
+		background-color: black;
+		padding: 10px;
+		border-radius: 15px;
+		cursor: default;
+	}
+	
+	input {
+		border-width: 2px;
+		border-color: white;
+		border-style: solid;
+		font-family: "Press Start 2P";	
+		color: white;
+		background-color: black;
+		padding: 10px;
+		width: 200px;
+		height: 15px;
+	}
+	
+	button:hover {
+		background-color: #666;
+		cursor: pointer;
+	}
+	
+	#startButton {
+		margin-left: 20px;	
+	}
+	
+	#bruh {
+		margin-top: 10px;	
+	}
+    
+    </style>
+</head>
+
+<body>
+	<h1>NESTris Score Calculator</h1>
+    <h3>ported from <a href="https://scratch.mit.edu/projects/346179458/" target="_blank">NESTris Score Counter</a> by EricICX</h3>
+    
+    <span>Last known score: </span><input id="score" /> <span>Line count: </span><input id="lines" /><button id="startButton">Start!</button><br>
+    
+    <div id="bruh">
+        <button id="single">Single</button>
+        <button id="double">Double</button>
+        <button id="triple">Triple</button>
+        <button id="tetris">Tetris</button>
+	</div>
+    
+    <br><div id="events"></div>
+    
+    <script src="script.js"></script>
+    
+
+</body>
+
+</html>
